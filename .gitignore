@@ -1,0 +1,6 @@
+Library/
+*.userprefs
+Temp/
+*.DS_Store
+UnityVS.*
+UnityVS/
