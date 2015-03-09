@@ -11,19 +11,19 @@
 　Animationウィンドウで確認したのとはことなる動作をします。<br />
 　<br />
 　合わせる為には、AnimatorのApplyRootMotionのチェックを外す必要があります。<br />
-　このプロジェクトをUnity4系で開いてみると、ApplyRootMotionのチェックを外さなくてもAnimationウィンドウと<br />
+　このプロジェクトをUnity4系で開いてみると、ApplyRootMotionのチェックを外さなくてもAnimationウィンドウと
 　同じアニメが再生されます。<br />
-　
+　<br />
 #1 解説<br />
-Animationのチュートリアルに個々の説明が書かれています。
-https://www.youtube.com/watch?v=Kn6jxLWA31M
-
-Unity4とUnity5ではApplyRootMotionの意味合いが変わりました。
-4では、絶対座標としてAnimationを扱い「ApplyRootMotion」することでRootMotionの座標にSetしています。
-5では「ApplyRootMotion」することでMotionの初期値を相対的に扱う事が出来るようになっています。
-
+Animationのチュートリアルに個々の説明が書かれています。<br />
+https://www.youtube.com/watch?v=Kn6jxLWA31M<br />
+<br />
+Unity4とUnity5ではApplyRootMotionの意味合いが変わりました。<br />
+4では、絶対座標としてAnimationを扱い「ApplyRootMotion」することでRootMotionの座標にSetしています。<br />
+5では「ApplyRootMotion」することでMotionの初期値を相対的に扱う事が出来るようになっています。<br />
+<br />
 #1 注意点<br />
-チュートリアルの動画にあるような、「GenerateRootMotionCurves」のボタンはUnityで作成したAnimationにしか表示されません。
+チュートリアルの動画にあるような、「GenerateRootMotionCurves」のボタンはUnityで作成したAnimationにしか表示されません。<br />
 3Dモデルにモーションをつけ、FBXなどで持ってきた場合、動画の場所ではなく、FBXImport Settings のAnimationsの中で
-モーションを切り出した際、Motionの項目でRootMotionNodeでDedaultNodeを設定できます。
-ここでNodeを設定すると、「GenerateRootMotionCurves」を押したのと同じ事になるみたいです。
+モーションを切り出した際、Motionの項目でRootMotionNodeでDedaultNodeを設定できます。<br />
+ここでNodeを設定すると、「GenerateRootMotionCurves」を押したのと同じ事になるみたいです。<br />
